@@ -1,0 +1,7 @@
+---
+
+- name: package installer
+  yum:
+    name: "{{ package }}"
+    state: latest
+

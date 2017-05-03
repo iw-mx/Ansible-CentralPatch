@@ -1,0 +1,6 @@
+---
+
+- name: upgrade all packages
+  yum:
+    name: "{{ package }}"
+    state: latest

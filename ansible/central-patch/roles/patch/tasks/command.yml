@@ -1,0 +1,5 @@
+---
+
+- name: Run a command 
+  shell: "{{ command }}"
+  register: command-output

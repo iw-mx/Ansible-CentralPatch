@@ -1,0 +1,85 @@
+# This is the default ansible 'hosts' file.
+#
+# It should live in /etc/ansible/hosts
+#
+#   - Comments begin with the '#' character
+#   - Blank lines are ignored
+#   - Groups of hosts are delimited by [header] elements
+#   - You can enter hostnames or ip addresses
+#   - A hostname/ip can be a member of multiple groups
+
+# Ex 1: Ungrouped hosts, specify before any group headers.
+
+## green.example.com
+## blue.example.com
+## 192.168.100.1
+## 192.168.100.10
+
+# Ex 2: A collection of hosts belonging to the 'webservers' group
+
+[test]
+10.110.6.17
+10.110.6.30
+10.110.6.31
+
+[desarrollo]
+10.110.6.16
+10.110.6.17
+10.110.6.30
+10.110.6.31
+10.110.6.37
+10.110.6.39
+10.110.6.44
+10.110.6.46
+10.110.6.57
+10.110.6.64
+10.110.6.73
+10.110.6.108
+10.110.6.113
+10.110.6.119
+10.110.6.124
+10.110.6.125
+10.110.6.126
+10.110.6.127
+10.110.6.128
+10.110.6.150
+10.110.6.163
+10.110.6.164
+10.110.6.177
+10.110.6.178
+10.110.6.180
+10.110.6.184
+10.110.6.185
+10.110.6.188
+10.110.6.191
+10.110.6.198
+10.110.6.199
+10.110.6.201
+
+
+
+## [webservers]
+## alpha.example.org
+## beta.example.org
+## 192.168.1.100
+## 192.168.1.110
+
+# If you have multiple hosts following a pattern you can specify
+# them like this:
+
+## www[001:006].example.com
+
+# Ex 3: A collection of database servers in the 'dbservers' group
+
+## [dbservers]
+## 
+## db01.intranet.mydomain.net
+## db02.intranet.mydomain.net
+## 10.25.1.56
+## 10.25.1.57
+
+# Here's another example of host ranges, this time there are no
+# leading 0s:
+
+## db-[99:101]-node.example.com
+

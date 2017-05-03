@@ -1,0 +1,8 @@
+---
+- name: Patching Linux Servers
+  user: lmondragonc
+  hosts: "{{ hosts }}"
+  become: yes
+  
+  roles: 
+      - patch

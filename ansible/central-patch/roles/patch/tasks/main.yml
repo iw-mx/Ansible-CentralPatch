@@ -1,0 +1,21 @@
+---
+
+- include: rhel.yml
+  tags:
+    - rhel
+
+- include: install.yml
+  tags:
+    - install
+
+- include: upgrade.yml
+  tags:
+    - upgrade
+
+- include: command.yml
+  tags:
+    - command
+
+- include: test.yml
+  tags:
+    - test
